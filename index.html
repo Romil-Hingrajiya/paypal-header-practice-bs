@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <header>
+      <article class="container">
+
+        <nav class="navbar navbar-expand-xl justify-content-between" id="navbar">
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuCollapse" aria-controls="menuCollapse" aria-expanded="false" aria-label="offcanvas Menu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+            <a href="#" class="navbar-brand me-xl-5">
+                <img src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-200px.png" class="d-none d-xl-flex" alt="PayPal Logo"/>
+                <img src="./images/paypal-logo.jpg" class="d-flex d-xl-none" width="70rem" height="70rem" alt="PayPal Logo" />
+            </a>
+
+            <ul class="navbar-nav d-none d-xl-flex ms-0 ms-xl-5">
+                <li class="nav-item">
+                    <a href="#individuals" class="nav-link d-flex pe-0" data-bs-toggle="collapse" data-bs-target=".show, #individuals" role="button" aria-expanded="true" aria-controls="navbar">INDIVIDUAL
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down mt-1 ms-1" viewBox="0 0 16 16">
+                        <path d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/>
+                      </svg>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#business" class="nav-link d-flex pe-0" data-bs-toggle="collapse" data-bs-target=".show, #business" role="button" aria-controls="navbar">BUSINESS
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down mt-1 ms-1" viewBox="0 0 16 16">
+                        <path d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/>
+                      </svg>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#partners" class="nav-link d-flex pe-0" data-bs-toggle="collapse" data-bs-target=".show, #partners" role="button" aria-controls="navbar">PARTNERS
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down mt-1 ms-1" viewBox="0 0 16 16">
+                        <path d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/>
+                      </svg>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#usefulInfo" class="nav-link d-flex pe-0" data-bs-toggle="collapse" data-bs-target=".show, #usefulInfo" role="button" aria-controls="navbar">USEFUL INFO
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down mt-1 ms-1" viewBox="0 0 16 16">
+                        <path d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/>
+                      </svg>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="offcanvas offcanvas-start" id="menuCollapse">
+
+              <h4 class="offcanvas-header"></h4>
+
+              <ul class="offcanvas-body d-xl-none" style="list-style-type: none;">
+                <li class="nav-item">
+                    <a href="#offcanvas-individuals" class="nav-link d-flex" data-bs-toggle="offcanvas" role="button" aria-expanded="false" aria-controls="">INDIVIDUAL
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-caret-right-fill ms-2 mt-2" viewBox="0 0 16 16">
+                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                      </svg>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#offcanvas-business" class="nav-link d-flex" data-bs-toggle="offcanvas" role="button" aria-expanded="false" aria-controls="">BUSINESS
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-caret-right-fill ms-2 mt-2" viewBox="0 0 16 16">
+                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                      </svg>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#offcanvas-partners" class="nav-link d-flex" data-bs-toggle="offcanvas" role="button" aria-expanded="false" aria-controls="">PARTNERS
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-caret-right-fill ms-2 mt-2" viewBox="0 0 16 16">
+                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                      </svg>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#offcanvas-usefulInfo" class="nav-link d-flex" data-bs-toggle="offcanvas" role="button" aria-expanded="false" aria-controls="">USEFUL INFO
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-caret-right-fill ms-2 mt-2" viewBox="0 0 16 16">
+                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                      </svg>
+                    </a>
+                </li>
+                <button type="submit" role="button" class="offcanvas-sign-up d-block d-xl-none">Sign Up</button>
+            </ul>
+            </div>
+            
+            
+
+            <div class="profile-registration">
+                <button type="submit" role="button" class="btn profile-log-in btn-sm me-1">Log In</button>
+                <button type="submit" role="button" class="btn profile-sign-up d-none d-xl-inline-flex">Sign Up</button>
+            </div>
+        </nav>
+      </article>
+    </header>
+
+    <div class="collapse" id="individuals">
+      <div class="card card-body">
+        <div class="row gy-2">
+
+          <div class="col-3 offset-1">
+            <a href="#" class="text-white">
+              <b>Individual Home</b><br>
+              Learn about shopping with PayPal
+            </a>
+          </div>
+          <div class="col-3">
+            <a href="#" class="text-white">
+              <b>Shop with PayPal</b><br>
+              Use PayPal in India & worldwide
+            </a>
+          </div>
+          <div class="col-1 offset-4">
+            <button type="button" class="btn-close btn-close-white" data-bs-toggle="collapse" data-bs-target="#individuals" data-bs-dismiss="#individuals" aria-label="close"></button>
+          </div>
+          <div class="w-100"></div>
+          <div class="col-3 offset-1">
+            <a href="#" class="text-white">
+              <b>Buyer Protection</b><br>
+              How we protect your purchases
+            </a>
+          </div>
+          <div class="col-3">
+            <a href="#" class="text-white">
+              <b>Getting Started</b><br>
+              How to start using PayPal
+            </a>
+          </div>
+
+          </div>
+        </div>        
+    </div>
+
+    <div class="collapse" id="business">
+      <div class="card card-body">
+        <div class="row gx-2 justify-content-between">
+
+          <div class="col-4 offset-1">
+            <div class="card-header fw-lighter ps-4 border-bottom border-bottom-1">
+              SMALL-TO-MEDIUM BUSINESS
+            </div>
+            <ul class="flex-column enterprise pt-3">
+              <li>Introduction</li>
+              <li>Solutions</li>
+              <li>How PayPal Works</li>
+              <li>Accept Payments</li>
+              <li>Getting Started</li>
+              <li>Make Payments</li>
+              <li class="invisible">1</li>
+              <li>Manage Risk</li>
+              <li class="invisible">1</li>
+              <li>Accelerate Growth</li>
+              <li class="invisible">1</li>
+              <li>Streamline Operations</li>
+            </ul>
+          </div>
+
+          <div class="col-4">
+            <div class="card-header fw-lighter ps-4 border-bottom border-bottom-1">
+              ENTERPRISE
+            </div>
+            <ul class="flex-column enterprise pt-3">
+              <li>Introduction</li>
+              <li>Platform & Solutions</li>
+              <li>Marketplaces & Partners</li>
+              <li>Accept Payments</li>
+              <li class="invisible">1</li>
+              <li>Make Payments</li>
+              <li class="invisible">1</li>
+              <li>Manage Risk</li>
+              <li class="invisible">1</li>
+              <li>Accelerate Growth</li>
+              <li class="invisible">1</li>
+              <li>Streamline Operations</li>
+            </ul>
+          </div>
+
+          <div class="col-2">
+            <div class="card-header fw-lighter border-bottom border-bottom-1">
+              ENTERPRISE
+            </div>
+            <ul class="flex-column pt-3">
+              <li>Pricing</li>
+              <li>Business Resource Centre</li>
+              <li>Identity Verification (KYC)</li>
+            </ul>
+          </div>
+
+          <div class="col-1 ms-auto">
+            <button type="button" class="btn-close btn-close-white" data-bs-toggle="collapse" data-bs-target="#business" data-bs-dismiss="#business" aria-label="close"></button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="collapse" id="partners">
+      <div class="card card-body">
+        <div class="row">
+          <div class="col-5 offset-1 mb-4">
+            <a href="#" class="text-white fw-bold">Partner With Us</a>
+          </div>
+          <div class="col-1 ms-auto">
+            <button type="button" class="btn-close btn-close-white" data-bs-toggle="collapse" data-bs-target="#partners" data-bs-dismiss="#partners" aria-label="close"></button>
+          </div>
+          <div class="w-100"></div>
+          <div class="col-5 offset-1 mt-4 mb-4">
+            <a href="#" class="text-white fw-bold">Partner Directory</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="collapse" id="usefulInfo">
+      <div class="card card-body">
+        <div class="row g-3 mb-3">
+          <div class="col-2 offset-1">
+            <a href="#" class="text-white fw-bold">Online Security</a>
+          </div>
+          <div class="col-2 offset-1">
+            <a href="#" class="text-white fw-bold">Phishing</a>
+          </div>
+          <div class="col-2 offset-1">
+            <a href="#" class="text-white fw-bold">Foreign Inward Remittance Advise (FIRA)</a>
+          </div>
+          <div class="col-1 ms-auto">
+            <button type="button" class="btn-close btn-close-white" data-bs-toggle="collapse" data-bs-target="#usefulInfo" data-bs-dismiss="#usefulInfo" aria-label="close"></button>
+          </div>
+          <div class="w-100"></div>
+          <div class="col-2 offset-1">
+            <a href="#" class="text-white fw-bold">Fraud Prevention</a>
+          </div>
+          <div class="col-2 offset-1">
+            <a href="#" class="text-white fw-bold">PCI Compliance</a>
+          </div>
+          <div class="col-2 offset-1">
+            <a href="#" class="text-white fw-bold">Help Centre</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="offcanvas offcanvas-start d-xl-none" id="offcanvas-individuals">
+      <h4 class="offcanvas-header"></h4>
+
+      <div class="offcanvas-body">
+        <div class="row gy-2">
+          <div class="col-12">
+            <a href="#" data-bs-toggle="offcanvas" data-bs-target="#menuCollapse" class="text-white fw-bolder fs-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+                <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+              </svg>
+              INDIVIDUAL</a>
+          </div>
+
+          <div class="col-12">
+            <a href="#" class="text-white">
+              <b>Individual Home</b>
+            </a>
+          </div>
+          <div class="col-12">
+            <a href="#" class="text-white">
+              <b>Shop with PayPal</b>
+            </a>
+          </div>
+          <div class="col-12">
+            <a href="#" class="text-white">
+              <b>Buyer Protection</b>
+            </a>
+          </div>
+          <div class="col-12">
+            <a href="#" class="text-white">
+              <b>Getting Started</b>
+            </a>
+          </div>
+
+          </div>
+        </div>        
+    </div>
+
+    <div class="offcanvas offcanvas-start d-xl-none" id="offcanvas-business">
+      <h4 class="offcanvas-header"></h4>
+      <div class="card card-body offcanvas-body">
+        <div class="row gx-2 justify-content-between">
+
+          <div class="col-12">
+            <a href="#" data-bs-toggle="offcanvas" data-bs-target="#menuCollapse" class="text-white fw-bolder fs-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+                <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+              </svg>
+              BUSINESS</a>
+          </div>
+
+          <div class="col-12">
+            <div class="card-header border-bottom border-bottom-1">
+              SMALL-TO-MEDIUM BUSINESS
+            </div>
+            <ul class="flex-column">
+              <li>Introduction</li>
+              <li>How PayPal Works</li>
+              <li>Getting Started</li>
+              <li>Solutions</li>
+              <li>Accept Payments</li>
+              <li>Make Payments</li>
+              <li>Manage Risk</li>
+              <li>Accelerate Growth</li>
+              <li>Streamline Operations</li>
+            </ul>
+          </div>
+
+          <div class="col-12">
+            <div class="card-header border-bottom border-bottom-1">
+              ENTERPRISE
+            </div>
+            <ul class="flex-column">
+              <li>Introduction</li>
+              <li>Marketplaces & Partners</li>
+              <li>Platform & Solutions</li>
+              <li>Accept Payments</li>
+              <li>Make Payments</li>
+              <li>Manage Risk</li>
+              <li>Accelerate Growth</li>
+              <li>Streamline Operations</li>
+            </ul>
+          </div>
+
+          <div class="col-12">
+            <div class="card-header border-bottom border-bottom-1">
+              ENTERPRISE
+            </div>
+            <ul class="flex-column">
+              <li>Pricing</li>
+              <li>Business Resource Centre</li>
+              <li>Identity Verification (KYC)</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="offcanvas offcanvas-start d-xl-none" id="offcanvas-partners">
+      <h4 class="offcanvas-header"></h4>
+      <div class="card card-body offcanvas-body">
+        <div class="row gy-3">
+          <div class="col-12">
+            <a href="#" data-bs-toggle="offcanvas" data-bs-target="#menuCollapse" class="text-white fw-bolder fs-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+                <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+              </svg>
+              PARTNERS</a>
+          </div>
+          <div class="col-12">
+            <a href="#" class="text-white fw-bold">Partner With Us</a>
+          </div>
+          <div class="col-12">
+            <a href="#" class="text-white fw-bold">Partner Directory</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="offcanvas offcanvas-start d-xl-none" id="offcanvas-usefulInfo">
+      <h4 class="offcanvas-header"></h4>
+      <div class="card card-body offcanvas-body">
+        <div class="row g-3">
+          <div class="col-12">
+            <a href="#" data-bs-toggle="offcanvas" data-bs-target="#menuCollapse" class="text-white fw-bolder fs-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+                <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+              </svg>
+              USEFUL INFO</a>
+          </div>
+          <div class="col-12">
+            <a href="#" class="text-white fw-bold">Online Security</a>
+          </div>
+          <div class="col-12">
+            <a href="#" class="text-white fw-bold">Phishing</a>
+          </div>
+          <div class="col-12">
+            <a href="#" class="text-white fw-bold">Foreign Inward Remittance Advise (FIRA)</a>
+          </div>
+          <div class="col-12">
+            <a href="#" class="text-white fw-bold">Fraud Prevention</a>
+          </div>
+          <div class="col-12">
+            <a href="#" class="text-white fw-bold">PCI Compliance</a>
+          </div>
+          <div class="col-12">
+            <a href="#" class="text-white fw-bold">Help Centre</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    
+    
+    
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
